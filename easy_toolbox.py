@@ -35,6 +35,7 @@ RAW_COMMANDS = [
     ("add-superuser", "Create admin_admin.",
      "{exec} web python manage.py loaddata ../oioioi/oioioi_cypress/cypress/fixtures/admin_admin.json"),
     ("test", "Run unit tests.", "{exec} web ../oioioi/test.sh"),
+    ("test-paralell", "Run unit tests in paralell.", "{exec} web ../oioioi/test.sh -n auto"),
     ("test-slow", "Run unit tests. (--runslow)", "{exec} web ../oioioi/test.sh --runslow"),
     ("test-abc", "Run specific test file. (edit the toolbox)",
      "{exec} web ../oioioi/test.sh -v oioioi/problems/tests/test_task_archive.py"),
